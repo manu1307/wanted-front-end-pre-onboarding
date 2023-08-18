@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -20,24 +20,25 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.header .menus {
+.header .header-menus {
   flex: 1;
   font-family: "Oswald", sans-serif;
+  font-size: 14px;
   display: flex;
   gap: 59px;
   color: #1d1f24;
   opacity: 0.2;
 }
 
-.header .menus div {
+.header .header-menus div {
   cursor: pointer;
   display: inline-block;
   text-align: center;
 }
-.header .menus div:hover {
+.header .header-menus div:hover {
   font-weight: 700;
 }
-.header .menus div::after {
+.header .header-menus div::after {
   content: attr(title);
   display: block;
   font-weight: 600;
@@ -47,4 +48,84 @@ body {
 
 .header .hamburger {
   justify-self: right;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #1d1f24;
+  width: 100vw;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  padding: 40px 38px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer-info {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.footer .footer-info img {
+  margin-bottom: 6px;
+}
+.footer .footer-menus {
+  font-family: "Oswald", sans-serif;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 12px;
+}
+.footer .footer-menus div {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.75px;
+}
+.footer .footer-menus > div:nth-child(2) {
+  order: 5;
+}
+.footer .footer-menus > div:nth-child(4) {
+  order: 6;
+}
+.footer .footer-menus > div:nth-child(6) {
+  order: 7;
+}
+
+.footer .footer-social .socials {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  padding-right: 5px;
+  margin-bottom: 15px;
+}
+.footer .footer-social .footer-email-input {
+  display: flex;
+  gap: 0;
+  width: 300px;
+  height: 35px;
+}
+.footer .footer-social .footer-email-input input {
+  width: 60%;
+  padding-left: 15px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.footer .footer-social .footer-email-input input::placeholder {
+  font-family: "Lato", sans-serif;
+  color: #1d1f2440;
+}
+
+.footer .footer-social .footer-email-input button {
+  width: 40%;
+  border: none;
+  background-color: #ff565c;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }

@@ -2,5 +2,6 @@
 
 ## figma
 
+
 ## 링크
-https://manu1307.github.io/wanted-front-end-pre-onboarding.github.io/
+https://manu1307.github.io/wanted-front-end-pre-onboarding/
